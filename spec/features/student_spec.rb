@@ -30,6 +30,7 @@ describe 'form page' do
     fill_in 'student[last_name]', with: "Tyrell"
 
     click_on "Submit Student"
+    # byebug
 
     expect(page).to have_content("Margaery")
   end
